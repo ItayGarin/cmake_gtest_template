@@ -7,6 +7,10 @@
 #ifndef _GREETER_H_
 #define _GREETER_H_
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 /*************************************************************************/
 /**************************** API SECTIION *******************************/
 /*************************************************************************/
@@ -30,7 +34,7 @@ typedef struct
  ** @return returns the error code
  **/
 greeter_retval init_greeter(const char * greet_string,
-                            greeter_t * result_greeter);
+                            greeter_t ** result_greeter);
 
 /** destroy_greeter - greeter "class" destructor
  **
@@ -44,5 +48,9 @@ void destroy_greeter(const greeter_t * greeter);
  ** @return returns the error code
  **/
 greeter_retval greet(greeter_t * greeter);
+
+#ifdef __cplusplus
+}
+#endif
 
 #endif /* _GREETER_H_ */
