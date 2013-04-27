@@ -1,18 +1,18 @@
 ################################
-# GTest
+########### GTest #############
 ################################
 
+# compile gtest (easy since it also uses CMake)
 add_subdirectory(gtest)
 include_directories(${gtest_SOURCE_DIR}/include ${gtest_SOURCE_DIR})
 
 ################################
-# Unit Tests
+########## UNIT TEST ###########
 ################################
 
-# Add test cpp file
-add_executable( runUnitTests greeter-test.cpp )
+# compile each of the tested modules to a static library
 add_library( greeter.a STATIC ../source/greeter.c )
 
-# Link test executable against gtest & gtest_main
+# compile and link the test-runner (contains the unit-tests)
+add_executable( runUnitTests greeter-test.cpp )
 target_link_libraries(runUnitTests gtest gtest_main greeter.a)
-add_test( runUnitTests runUnitTests )
