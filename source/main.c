@@ -29,7 +29,7 @@ int main(int argc, const char * const argv)
     }
 
     /* invoke greet */
-    return_value = greet(&greeter);
+    return_value = greet(greeter);
     if (GREETER_SUCCESS != return_value)
     {
         printf("ERROR: Failed to greet\r\n");
@@ -37,5 +37,5 @@ int main(int argc, const char * const argv)
     }
 
 cleanup:
-    destroy_greeter(&greeter);
+    destroy_greeter(greeter);
 }

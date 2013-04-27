@@ -24,7 +24,7 @@ typedef enum
 
 typedef struct
 {
-    char * greet_string;
+    const char * greet_string;
 } greeter_t;
 
 /** init_greeter greeter "class" constructor
@@ -40,7 +40,7 @@ greeter_retval init_greeter(const char * greet_string,
  **
  ** @param result_greeter - the greeter that needs to be destroyed (free internally)
  **/
-void destroy_greeter(const greeter_t * greeter);
+void destroy_greeter(greeter_t * greeter);
 
 /** greet greets upon request
  **
