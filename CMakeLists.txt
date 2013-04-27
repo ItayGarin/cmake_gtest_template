@@ -9,10 +9,5 @@ project(greeter)
 ############# MAIN TARGETS  ################
 ############################################
 
-add_executable(greeter source/greeter.c source/main.c)
-
-############################################
-############# TEST TARGETS  ################
-############################################
-
+add_subdirectory(source)
 add_subdirectory(test EXCLUDE_FROM_ALL)
