@@ -36,7 +36,7 @@ greeter_retval init_greeter(const char * greet_string,
 
 void destroy_greeter(const greeter_t * greeter)
 {
-    return;
+    free(greeter);
 }
 
 greeter_retval greet(greeter_t * greeter)

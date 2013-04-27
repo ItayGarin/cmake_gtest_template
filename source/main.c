@@ -18,7 +18,7 @@
 int main(int argc, const char * const argv)
 {
     greeter_retval return_value = GREETER_SUCCESS;
-    greeter_t greeter;
+    greeter_t * greeter = NULL;
 
     /* init a greeter */
     return_value = init_greeter("Hello World !\n", &greeter);
