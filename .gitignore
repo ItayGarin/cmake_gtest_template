@@ -1,6 +1,7 @@
 *.plist
 *.o
 *.exe
+G*
 core
 tags
 bin
