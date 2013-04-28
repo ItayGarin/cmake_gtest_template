@@ -29,7 +29,7 @@ target_link_libraries(${test_BIN} ${test_LIBS} greeter.a)
 
 add_custom_target(
   test
-  COMMAND ${test_BIN} --gtest_color=yes
+  COMMAND ${test_BIN} --gtest_color=auto
   DEPENDS ${test_BIN}
   COMMENT "Building and Executing the Unit-Tests"
   VERBATIM
