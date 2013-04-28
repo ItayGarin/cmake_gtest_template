@@ -1,8 +1,8 @@
 CMake-GTest Template Project
 =============
 
-This repo contains a barebone template C project.</br>
-This project uses CMake as the primary build-generation tools</br>
+This repo contains a barebone template C project.<br />
+This project uses CMake as the primary build-generation tools</br >
 and Gtest as the unit-testing framwork.
 
 ## Goal
@@ -40,10 +40,10 @@ $ cmake ..
 
 ## Compatibility
 
-This was only tested on linux (Ubuntu 12.04 specifically).</br>
+This was only tested on linux (Ubuntu 12.04 specifically).<br />
 Let me know if you try it out on other systems.
 
 ## Contact and Contributing
 
-Please feel free to contact me at : thifixp@gmail.com .</br>
+Please feel free to contact me at : thifixp@gmail.com .<br />
 Also, all contribuation are welcome via a pull request.
